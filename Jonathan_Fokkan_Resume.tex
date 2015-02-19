@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{tgpagella}
+\usepackage{hyperref}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -77,7 +78,7 @@
 \hyphenpenalty=1000
 \begin{description*}
 	\item[Languages:]
-	Java, Scala, C\#, Python, Go, shell, SML, HTML/CSS, SQL, \LaTeX
+	Scala, Java, C\#, Python, Go, shell, Haskell, HTML/CSS, SQL, \LaTeX, SML
 	\item[Tools:]
         Eclipse, Emacs, Git, Mercurial
         \item[Paradigms:]
@@ -138,6 +139,59 @@
 
 \begin{itemize}
 	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{SSMU Powerlifting Team Website}}
+		{\emph{Ongoing}}
+	\\
+	\headerrow
+		{\emph{A team website for the SSMU powerlifting team at McGill to show team members'
+                    the progress, competition results and records}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Scala project with the Play framwork
+		\item Backend in PostgreSQL with the Slick Functional Relational Mapping library
+                \item Front-end made using Bootstrap and JQuery
+                \item Repository at \url{https://github.com/jonfk/ssmu-powerlifting-play}
+                \item Live at \url{http://ssmupowerlifting.jonfk.ca}
+	\end{itemize*}
+        % End Project
+
+	\item
+	\headerrow
+		{\textbf{Opendaylight Project Explorer}}
+		{\emph{January 2015}}
+	\\
+	\headerrow
+		{\emph{An xml and Maven Repository file crawler for the Opendaylight Project}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Scala project with the AKKA framework
+		\item Backend in Spray with eclipse aether library to crawl the Maven Repository
+                \item Front-end made using Bootstrap, JQuery and AngularJS
+                \item A root xml is crawled and parsed which points to xml files that are recursively
+                  parsed to show the contents and relationships between Opendaylight projects in
+                  terms of Karaf features
+	\end{itemize*}
+        % End Project
+
+	\item
+	\headerrow
+		{\textbf{Purely Functional Dynamic language}}
+		{\emph{Work In Progress}}
+	\\
+	\headerrow
+		{\emph{A purely functional dynamic programming language with ML like syntax in Go}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Lexer and parser are hand written in Go.
+                \item Concurrent lexer similar to the Go lexer
+                \item Recursive descent parser done manually
+                \item Work in Progress with only expressions currently working
+                \item Repository at \url{https://github.com/jonfk/calc}
+	\end{itemize*}
+        % End Project
 
 	\item
 	\headerrow

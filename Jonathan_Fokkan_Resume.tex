@@ -1,0 +1,264 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Jonathan D. Fok kan}}
+
+4885 Blvd Henri-Bourassa O.\ \ \textbullet
+\ \ Apt\ 323\ \ \textbullet
+\ \ Montr\'{e}al, QC H4L 0A5
+\\
+(514) 963-2699\ \ \textbullet
+\ \ jfokkan@gmail.com
+\end{center}
+
+% Double-line for start and end of epigraph.
+%\newcommand{\epiline}{\hrule \vskip -.2em \hrule}
+
+\hrule \vskip -.2em \hrule
+
+%\hrule
+
+\vspace{-0.4em}
+\subsection*{SKILLS}
+
+%\subsubsection*{Languages}
+%\begin{indentsection}{\parindent}
+%\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+        French, English and Cr\'{e}ole
+\end{description*}
+%\end{indentsection}
+
+\subsubsection*{Core Technical \& Creative Skills}
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	Java, Scala, C\#, Python, Go, shell, SML, HTML/CSS, SQL, \LaTeX
+	\item[Tools:]
+        Eclipse, Emacs, Git, Mercurial
+        \item[Paradigms:]
+        Object Oriented, Functional, Declarative, Imperative
+        \item[Design:]
+        UML
+\end{description*}
+\end{indentsection}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{EDUCATION}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{McGill University}}
+		{\textbf{Montr\'{e}al, QC}}
+	\\
+	\headerrow
+		{\emph{B.Sc Hon Software Engineering}}
+		{\emph{January 2011 -- 2014}}
+%	\begin{itemize*}
+%		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+%		\item Mirum est notare quam littera gothica, quam nunc putamus parum
+%		claram.
+%	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{C\'{e}gep Vanier College}}
+		{\textbf{Montr\'{e}al, QC}}
+	\\
+	\headerrow
+		{\emph{DEC, Pure and Applied Science}}
+		{\emph{January 2009 -- December 2010}}
+	\begin{itemize*}
+		\item \textbf{Honour Roll} for Pure and Applied Science
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Saint Mary's College}}
+		{\textbf{\^{i}le Maurice}}
+	\\
+	\headerrow
+		{\emph{Cambridge, GCE O-Levels, Science}}
+		{\emph{January 2004 -- November 2008}}
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{PROJECTS}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{McGill Robotics Simulation Team}}
+		{\emph{Winter 2013}}
+	\\
+	\headerrow
+		{\emph{A simulation environment to test computer vision, path planning and control of an underwater robot}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Team Project of 2 people
+		\item Simulation environment was built using Gazebo and ROS in C\texttt{++}
+		\item Simulate approximate behaviour of objects without fluid dynamics
+		\item Interface simulation with control systems and path planning
+	\end{itemize*}
+        % End Project
+
+	\item
+	\headerrow
+		{\textbf{Honours Thesis: Fault Tolerance in Software Defined Networks}}
+		{\emph{Winter 2013}}
+	\\
+	\headerrow
+		{\emph{Implement and test a method of replicating OpenFlow Controllers in a Software Defined Network}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Used Mininet as a testing environment
+		\item Modified OpenFlow switches using python to implement a polling mechanism to test which controller to use
+	\end{itemize*}
+        % End Project
+
+	\item
+	\headerrow
+		{\textbf{Android Directional application for the visually impaired}}
+		{\emph{Winter 2013}}
+	\\
+	\headerrow
+		{\emph{An application that provides audio cues and directions to navigate urban environments}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Used android talk back features to provide a usable interface for the visually impaired
+		\item Developped with a user centered design approach
+		\item Tested with the help of several visually impaired users
+	\end{itemize*}
+        % End Project
+
+	\item
+	\headerrow
+		{\textbf{XCOM Video game Remake}}
+		{\emph{2013}}
+	\\
+	\headerrow
+		{\emph{Remake of 2D turn based game XCOM in a 3D game engine with updated graphics with similar game mechanics}}
+		{\emph{}}
+	\begin{itemize*}
+		\item Team Project of 4 people
+		\item The Unity 3D game engine was used to create the game
+		\item The game was written in C\#
+		\item Multiplayer mode was added to play skirmishes between 2 players
+		\item New 3D models and animations were created using Blender
+	\end{itemize*}
+        % End Project
+
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{WORK EXPERIENCE}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Inocybe Technologies Inc.}}
+		{\textbf{Montr\'{e}al, QC}}
+	\\
+	\headerrow
+		{\emph{Software Developer}}
+		{\emph{May 2014 -- }}
+	\begin{itemize*}
+		\item Customize and build CoreOS to run as an SDN controller appliance
+                \item Created the an update manager in Go based on the Omaha protocol for the appliance
+                \item Created a project explorer for the Opendaylight project showing the karaf features and dependencies of modules in a complex project
+	\end{itemize*}
+        % End of Job
+
+	\item
+	\headerrow
+		{\textbf{Business Process Management Education Network}}
+		{\textbf{University of Coimbra, Portugal}}
+	\\
+	\headerrow
+		{\emph{Research Intern}}
+		{\emph{Summer 2012}}
+	\begin{itemize*}
+		\item Learn about various distributed database systems
+		\item Write benchmarks to compare hadoop+hive, MySQL cluster and VoltDB
+		\item Extend existing distributed database framework
+		\item Set up and maintain cluster of about 10 linux machines
+	\end{itemize*}
+        % End of Job
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{ACTIVITIES \& INTERESTS}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+        \item[]Member of IEEE, McGill Branch (2011 -- Present)
+        \item[]Powerlifting (Member of Qu\'{e}bec Powerlifting Federation) \& Cycling
+        \item[]Photography \& Web design
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+
+\end{document}

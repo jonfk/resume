@@ -80,11 +80,11 @@
 	\item[Languages:]
 	Scala, Go, Java, C\#, Python, shell, Haskell, HTML/CSS, SQL, C, C\texttt{++}, \LaTeX, SML
 	\item[Tools:]
-        Eclipse, Emacs, Git, Mercurial
+        Git, IntelliJ, Emacs, Eclipse, Vim
         \item[Paradigms:]
         Object Oriented, Functional, Declarative, Imperative
         \item[Design:]
-        UML
+        UML, ER Model
 \end{description*}
 \end{indentsection}
 
@@ -135,7 +135,7 @@
 
 \hrule
 \vspace{-0.4em}
-\subsection*{PROJECTS}
+\subsection*{SELECTED PROJECTS}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -143,7 +143,7 @@
 	\item
 	\headerrow
 		{\textbf{SSMU Powerlifting Team Website}}
-		{\emph{Ongoing}}
+		{\emph{March 2015}}
 	\\
 	\headerrow
 		{\emph{A team website for the SSMU powerlifting team at McGill to show team members'
@@ -154,7 +154,6 @@
 		\item Backend in PostgreSQL with the Slick Functional Relational Mapping library
                 \item Front-end made using Bootstrap and JQuery
                 \item Repository at \url{https://github.com/jonfk/ssmu-powerlifting-play}
-                \item Live at \url{http://ssmupowerlifting.jonfk.ca}
 	\end{itemize*}
         % End Project
 
@@ -179,7 +178,7 @@
 	\item
 	\headerrow
 		{\textbf{Dynamic Functional Programming language}}
-		{\emph{Work In Progress}}
+		{\emph{2015 - Work In Progress}}
 	\\
 	\headerrow
 		{\emph{A purely functional dynamic programming language with ML like syntax in Go}}
@@ -219,6 +218,7 @@
 	\begin{itemize*}
 		\item Used Mininet as a testing environment
 		\item Modified OpenFlow switches using python to implement a polling mechanism to test which controller to use
+                \item Implemented a fallback algorithm for OpenFlow switches to improve fault tolerance
 	\end{itemize*}
         % End Project
 
@@ -232,28 +232,11 @@
 		{\emph{}}
 	\begin{itemize*}
 		\item Used android talk back features to provide a usable interface for the visually impaired
-		\item Developed with a user centered design approach
-		\item Tested with the help of several visually impaired users
+		\item Designed in a User Centered Design approach focussed on iterative feedback from users
+		\item Developped while testing with the help of several visually impaired users
+                \item App developped using Java
 	\end{itemize*}
         % End Project
-
-	\item
-	\headerrow
-		{\textbf{XCOM Video game Remake}}
-		{\emph{2013}}
-	\\
-	\headerrow
-		{\emph{Remake of 2D turn based game XCOM in a 3D game engine with updated graphics with similar game mechanics}}
-		{\emph{}}
-	\begin{itemize*}
-		\item Team Project of 4 people
-		\item The Unity 3D game engine was used to create the game
-		\item The game was written in C\#
-		\item Multiplayer mode was added to play skirmishes between 2 players
-		\item New 3D models and animations were created using Blender
-	\end{itemize*}
-        % End Project
-
 
 \end{itemize}
 
@@ -274,9 +257,20 @@
 		{\emph{Software Developer}}
 		{\emph{March 2015 -- Current}}
 	\begin{itemize*}
+                \item Worked in an Agile process with the Scrum Methodology
 	        \item Scala Backend engineer
+                  \begin{itemize*}
+                    \item Worked on an AKKA reactive backend in a microservice architecture using MongoDB as datastore
+                    \item Integrated a data pipeline to a Key Performance Indicators(KPI) module which used InfluxDB as metrics database for analytics
+                    \item Implemented website to display analytics from InfluxDB to display KPIs with meaningful information about status app usage
+                    \item Modularized a monolithic data pipeline into microservices
+                  \end{itemize*}
                 \item IOS development
-                \item Adding features to the core product relating to user workouts, data and Key Performance Indicators
+                  \begin{itemize*}
+                    \item Implemented features for a production IOS App in Objective-C sold on the Apple App Store
+                    \item Tests and Integration tests written in Swift
+                    \item Used Protobuf and JSON for client-server communication to sync critical data
+                  \end{itemize*}
 	\end{itemize*}
         % End of Job
 
@@ -289,8 +283,14 @@
 		{\emph{Software Developer}}
 		{\emph{May 2014 -- March 2015}}
 	\begin{itemize*}
-		\item Customize and build CoreOS to run as an SDN controller appliance
-                \item Created the an update manager in Go based on the Omaha protocol for the appliance
+		\item Customize and build CoreOS(a minimal linux distribution) to run as an SDN controller appliance
+                \item Designed and implemented an update manager in Go based on the Omaha protocol for a custom environment
+                \item Designed and implemented a Continuous Integration pipeline
+	          \begin{itemize*}
+                    \item Implemented using GoCD with a small cluster of workers
+                    \item Used Docker for isolation environments of builds
+                    \item CI pipeline ran tests, build code and pushed build artifacts to Artifactory repository
+	          \end{itemize*}
                 \item Created a project explorer for the Opendaylight project showing the karaf features and dependencies of modules in a complex project
 	\end{itemize*}
         % End of Job

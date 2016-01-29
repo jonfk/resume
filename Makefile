@@ -1,3 +1,4 @@
+.PHONY: clean
 
 Jonathan_Fokkan_Resume.pdf: Jonathan_Fokkan_Resume.tex
 	pdflatex Jonathan_Fokkan_Resume.tex

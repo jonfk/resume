@@ -1,10 +1,15 @@
 Jonathan Fok kan's Resume
 =========================
 
-Dependencies
+## Dependencies
 - texlive
 - pdflatex
 
-To create the pdf:
+### fontawesome
+I am using this package `fontawesome` package for nice icons. This requires lualatex.
 
-    make
+
+## Build
+```bash
+make
+```

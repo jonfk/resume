@@ -2,14 +2,11 @@ Jonathan Fok kan's Resume
 =========================
 
 ## Dependencies
+- docker
+or
 - texlive
-- pdflatex
+- lualatex
+
 
 ### fontawesome
 I am using this package `fontawesome` package for nice icons. This requires lualatex.
-
-
-## Build
-```bash
-make
-```
